@@ -23,7 +23,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -59,17 +59,19 @@ table {
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-	
 }
 body input:required:valid,
 body textarea:required:valid {
-	
 }
 
 body {
 	font-family: sans-serif;
-	min-width: 320px;
-	position: relative;
 	overflow-x: hidden;
+	margin: auto;
 }
 
+.clearfix:after {
+	display: table;
+	clear: both;
+	content: '';
+}
